@@ -149,16 +149,16 @@ services:
 #    labels:
 #    - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
 
-#  pma:
-#    image: phpmyadmin/phpmyadmin
-#    container_name: "${PROJECT_NAME}_pma"
-#    environment:
-#      PMA_HOST: $DB_HOST
-#      PMA_USER: $DB_USER
-#      PMA_PASSWORD: $DB_PASSWORD
-#      UPLOAD_LIMIT: 1G
-#    labels:
-#    - "traefik.http.routers.${PROJECT_NAME}_pma.rule=Host(`pma.${PROJECT_BASE_URL}`)"
+  pma:
+    image: phpmyadmin/phpmyadmin
+    container_name: "${PROJECT_NAME}_pma"
+    environment:
+      PMA_HOST: $DB_HOST
+      PMA_USER: $DB_USER
+      PMA_PASSWORD: $DB_PASSWORD
+      UPLOAD_LIMIT: 1G
+    labels:
+    - "traefik.http.routers.${PROJECT_NAME}_pma.rule=Host(`pma.${PROJECT_BASE_URL}`)"
 
 #  solr:
 #    image: wodby/solr:$SOLR_TAG
@@ -221,12 +221,12 @@ services:
 #    - ./:/var/www/html
 #    command: sh -c 'yarn install && yarn run start'
 
-#  blackfire:
-#    image: blackfire/blackfire
-#    container_name: "${PROJECT_NAME}_blackfire"
-#    environment:
-#      BLACKFIRE_SERVER_ID: XXXXX
-#      BLACKFIRE_SERVER_TOKEN: YYYYY
+  blackfire:
+    image: blackfire/blackfire
+    container_name: "${PROJECT_NAME}_blackfire"
+    environment:
+      BLACKFIRE_SERVER_ID: 8b483e1e-ad3a-4680-be7a-4056f03a2608
+      BLACKFIRE_SERVER_TOKEN: d65ae50631bd0dae5626b1671ff800802355d81897876d2fe39005847d912263
 
 #  webgrind:
 #    image: wodby/webgrind:$WEBGRIND_TAG
@@ -288,7 +288,7 @@ services:
     container_name: "${PROJECT_NAME}_traefik"
     command: --api.insecure=true --providers.docker
     ports:
-    - "${PROJECT_PORT}:80"
+    - "80:80"
 #    - '8080:8080' # Dashboard
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
