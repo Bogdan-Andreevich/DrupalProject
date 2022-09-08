@@ -13,15 +13,42 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
+
     ],
     "require": {
         "php": ">=7.4",
+        "bower-asset/photoswipe": "^5.2",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.1",
+        "drupal/block_visibility_groups": "^1.4",
+        "drupal/contact_emails": "^1.20",
+        "drupal/contact_storage": "^1.2",
+        "drupal/contact_tools": "^1.1",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/field_group": "^3.2",
+        "drupal/imagemagick": "^3.3",
+        "drupal/metatag": "^1.21",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/photoswipe": "^3.2",
+        "drupal/redirect": "^1.8",
+        "drupal/robotstxt": "^1.4",
+        "drupal/scheduler": "^1.4",
+        "drupal/snippet_manager": "^1.8",
+        "drupal/swiftmailer": "^2.2",
+        "drupal/tvi": "^1.0@RC",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/youtube": "^1.2",
         "drush/drush": "^11.0",
+        "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
     },
@@ -40,7 +67,8 @@
             "composer/installers": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "autoload": {
@@ -69,9 +97,10 @@
                 "web-root": "web/"
             }
         },
+        "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
