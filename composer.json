@@ -36,6 +36,7 @@
         "drupal/entity_usage": "^2.0@beta",
         "drupal/field_group": "^3.2",
         "drupal/imagemagick": "^3.3",
+        "drupal/markdown": "^3.0@RC",
         "drupal/metatag": "^1.21",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
@@ -49,6 +50,10 @@
         "drupal/twig_tweak": "^3.1",
         "drupal/youtube": "^1.2",
         "drush/drush": "^11.0",
+        "erusev/parsedown": "^1.7",
+        "erusev/parsedown-extra": "^0.8.1",
+        "league/commonmark": "^2.3",
+        "michelf/php-markdown": "^1.9",
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"
@@ -59,7 +64,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "RC",
     "prefer-stable": true,
     "config": {
         "discard-changes": true,
