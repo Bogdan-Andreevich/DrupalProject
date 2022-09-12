@@ -33,6 +33,7 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/easy_breadcrumb": "^2.0",
+        "drupal/entity_usage": "^2.0@beta",
         "drupal/field_group": "^3.2",
         "drupal/imagemagick": "^3.3",
         "drupal/metatag": "^1.21",
@@ -88,7 +89,8 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "rm -f web/robots.txt"
         ]
     },
     "extra": {
@@ -109,8 +111,6 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
-        },
-        "patches": {
         }
     }
 }

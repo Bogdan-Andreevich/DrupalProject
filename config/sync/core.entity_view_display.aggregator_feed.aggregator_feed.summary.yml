@@ -1,0 +1,69 @@
+uuid: e4a2ff8d-fe69-48ca-9ca5-c78e69234abd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.aggregator_feed.summary
+  module:
+    - aggregator
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          97f3ac4b-bcf3-4900-a9d8-23acb70d4f0f:
+            uuid: 97f3ac4b-bcf3-4900-a9d8-23acb70d4f0f
+            region: content
+            configuration:
+              id: 'extra_field_block:aggregator_feed:aggregator_feed:items'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          deabb8be-aee8-4ed4-9255-11acfb4d358e:
+            uuid: deabb8be-aee8-4ed4-9255-11acfb4d358e
+            region: content
+            configuration:
+              id: 'extra_field_block:aggregator_feed:aggregator_feed:more_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: OCl6AtoDUvFAsnvg1fosqsjFuoUvnIWQ28b_0Nc14Cg
+id: aggregator_feed.aggregator_feed.summary
+targetEntityType: aggregator_feed
+bundle: aggregator_feed
+mode: summary
+content:
+  items:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  more_link:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  checked: true
+  description: true
+  feed_icon: true
+  image: true
+  langcode: true
+  link: true
