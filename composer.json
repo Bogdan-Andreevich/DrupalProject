@@ -116,6 +116,11 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/markdown": {
+                "PHP 8.1 — Issue #3265416": "https://www.drupal.org/files/issues/2022-07-02/3265416-7.patch"
+            }
         }
     }
 }
