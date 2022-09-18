@@ -1,4 +1,4 @@
-uuid: ce276fa8-5e09-4523-b5bb-62133c018723
+uuid: 90dcfd66-9018-4ed3-be37-6bbf949efc84
 langcode: en
 status: true
 dependencies:
@@ -22,8 +22,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          639777d3-e081-4116-bf5d-52544aca4ff2:
-            uuid: 639777d3-e081-4116-bf5d-52544aca4ff2
+          fc18961f-c080-41cf-aaa3-68c8031b489c:
+            uuid: fc18961f-c080-41cf-aaa3-68c8031b489c
             region: content
             configuration:
               id: 'field_block:aggregator_item:aggregator_item:timestamp'

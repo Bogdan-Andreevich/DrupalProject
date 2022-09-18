@@ -1,0 +1,21 @@
+uuid: abdf7666-8527-4882-9858-853436c4976e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tittle
+    - paragraphs.paragraphs_type.youtube
+  module:
+    - text
+id: paragraph.youtube.field_tittle
+field_name: field_tittle
+entity_type: paragraph
+bundle: youtube
+label: 'Tittle '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

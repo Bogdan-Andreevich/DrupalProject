@@ -1,0 +1,41 @@
+uuid: c21396af-5349-4a57-8788-5a2582e4c6af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.youtube_gallary.field_tittle
+    - field.field.paragraph.youtube_gallary.field_youtubes
+    - paragraphs.paragraphs_type.youtube_gallary
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.youtube_gallary.default
+targetEntityType: paragraph
+bundle: youtube_gallary
+mode: default
+content:
+  field_tittle:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_youtubes:
+    type: youtube
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

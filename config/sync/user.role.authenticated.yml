@@ -6,10 +6,8 @@ dependencies:
     - filter.format.basic_html
   module:
     - comment
-    - contact
     - filter
     - media
-    - search
     - shortcut
     - system
 _core:
@@ -22,9 +20,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'access site-wide contact form'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'

@@ -23,8 +23,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          480bbeb1-7928-4759-b36d-569a5f3f6588:
-            uuid: 480bbeb1-7928-4759-b36d-569a5f3f6588
+          3f16f0d1-396a-4079-8927-8436e9a56fe5:
+            uuid: 3f16f0d1-396a-4079-8927-8436e9a56fe5
             region: content
             configuration:
               id: 'field_block:taxonomy_term:forums:description'

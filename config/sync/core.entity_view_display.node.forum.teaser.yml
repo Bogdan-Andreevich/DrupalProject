@@ -27,8 +27,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          7329445b-74f0-4430-8358-f08f9bff5832:
-            uuid: 7329445b-74f0-4430-8358-f08f9bff5832
+          e38e001d-e0b9-439f-a999-da6ee080401b:
+            uuid: e38e001d-e0b9-439f-a999-da6ee080401b
             region: content
             configuration:
               id: 'field_block:node:forum:taxonomy_forums'
@@ -43,8 +43,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          d090650a-9c8f-4483-963b-6da605c7e3e0:
-            uuid: d090650a-9c8f-4483-963b-6da605c7e3e0
+          bf65398e-d98f-40d0-8071-b8e1c2d0df89:
+            uuid: bf65398e-d98f-40d0-8071-b8e1c2d0df89
             region: content
             configuration:
               id: 'field_block:node:forum:body'
@@ -59,8 +59,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          1ebd9c0a-4f58-4ec4-971c-c69340ac07ec:
-            uuid: 1ebd9c0a-4f58-4ec4-971c-c69340ac07ec
+          5091e620-ccaf-46f4-aad7-6a137d8a2769:
+            uuid: 5091e620-ccaf-46f4-aad7-6a137d8a2769
             region: content
             configuration:
               id: 'extra_field_block:node:forum:links'

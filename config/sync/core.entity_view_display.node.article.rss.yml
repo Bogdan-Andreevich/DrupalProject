@@ -27,8 +27,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          8810e6db-7520-46c6-9675-218501ab5f3a:
-            uuid: 8810e6db-7520-46c6-9675-218501ab5f3a
+          35fa6b0f-3d44-46cc-a77c-5c7a6dc94ae8:
+            uuid: 35fa6b0f-3d44-46cc-a77c-5c7a6dc94ae8
             region: content
             configuration:
               id: 'extra_field_block:node:article:links'

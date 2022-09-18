@@ -31,8 +31,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          e32d1c08-8869-4a1d-8764-e8f52984ebf9:
-            uuid: e32d1c08-8869-4a1d-8764-e8f52984ebf9
+          c232fbdf-8df9-47e5-b382-80ba6de0d592:
+            uuid: c232fbdf-8df9-47e5-b382-80ba6de0d592
             region: content
             configuration:
               id: 'field_block:node:article:field_image'
@@ -50,8 +50,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          7afe8d83-60fb-459a-9382-aaeb3d122826:
-            uuid: 7afe8d83-60fb-459a-9382-aaeb3d122826
+          97803f46-9963-49a3-ac32-f38a94b0ffd3:
+            uuid: 97803f46-9963-49a3-ac32-f38a94b0ffd3
             region: content
             configuration:
               id: 'field_block:node:article:body'
@@ -65,8 +65,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          5d6d6149-79df-409b-9ba7-84d4eccb602c:
-            uuid: 5d6d6149-79df-409b-9ba7-84d4eccb602c
+          1e1b7251-53ee-43ed-9500-a4c09611de40:
+            uuid: 1e1b7251-53ee-43ed-9500-a4c09611de40
             region: content
             configuration:
               id: 'field_block:node:article:field_tags'
@@ -81,8 +81,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          ca0328cf-1837-4b3c-82fd-d6c3704ac744:
-            uuid: ca0328cf-1837-4b3c-82fd-d6c3704ac744
+          552e5f1d-83ed-43f0-915e-69d7e5595654:
+            uuid: 552e5f1d-83ed-43f0-915e-69d7e5595654
             region: content
             configuration:
               id: 'extra_field_block:node:article:links'
@@ -91,8 +91,8 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 3
             additional: {  }
-          ecc493dc-78fb-4eeb-9122-c1a79318ab9b:
-            uuid: ecc493dc-78fb-4eeb-9122-c1a79318ab9b
+          03b529d7-6a79-447a-b762-84f9f27bafed:
+            uuid: 03b529d7-6a79-447a-b762-84f9f27bafed
             region: content
             configuration:
               id: 'field_block:node:article:comment'

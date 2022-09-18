@@ -23,8 +23,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          90546ffb-3d5c-4769-8472-b912be15eb8b:
-            uuid: 90546ffb-3d5c-4769-8472-b912be15eb8b
+          654045f5-4be4-491e-b2b6-a611d5ca4a20:
+            uuid: 654045f5-4be4-491e-b2b6-a611d5ca4a20
             region: content
             configuration:
               id: 'field_block:comment:comment_forum:comment_body'
@@ -38,8 +38,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          a9333fdd-656c-4cd1-9384-3ce95ab2ca7a:
-            uuid: a9333fdd-656c-4cd1-9384-3ce95ab2ca7a
+          f4757f61-d9f2-43e3-a7f2-6b31c9fa4e93:
+            uuid: f4757f61-d9f2-43e3-a7f2-6b31c9fa4e93
             region: content
             configuration:
               id: 'extra_field_block:comment:comment_forum:links'

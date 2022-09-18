@@ -1,1 +1,1 @@
-default_parser: commonmark
+default_parser: commonmark-gfm

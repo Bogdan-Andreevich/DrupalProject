@@ -1,4 +1,4 @@
-uuid: 24ec40c0-c850-4cf5-bece-041cecbdf47a
+uuid: c38f2fc5-a576-48e8-92b7-b34856e552ad
 langcode: en
 status: true
 dependencies:
@@ -24,8 +24,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          e3d744cf-215f-4b9a-9ff1-8b51f18c453f:
-            uuid: e3d744cf-215f-4b9a-9ff1-8b51f18c453f
+          5779ff98-6be3-4241-9b65-61a1582e6dbd:
+            uuid: 5779ff98-6be3-4241-9b65-61a1582e6dbd
             region: content
             configuration:
               id: 'field_block:node:book:body'
@@ -39,8 +39,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          8d176dcb-1f20-4691-a366-603a5be76c4a:
-            uuid: 8d176dcb-1f20-4691-a366-603a5be76c4a
+          24217bc5-6aba-41c8-b479-7b04d47fbc36:
+            uuid: 24217bc5-6aba-41c8-b479-7b04d47fbc36
             region: content
             configuration:
               id: 'extra_field_block:node:book:links'

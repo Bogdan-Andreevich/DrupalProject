@@ -28,8 +28,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          af5ef3fd-1987-402f-879c-93d72a39b1e5:
-            uuid: af5ef3fd-1987-402f-879c-93d72a39b1e5
+          422dca83-7b32-40aa-977c-02ebba9e7c6a:
+            uuid: 422dca83-7b32-40aa-977c-02ebba9e7c6a
             region: content
             configuration:
               id: 'field_block:node:forum:taxonomy_forums'
@@ -44,8 +44,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          6a3b9a83-e9ec-4fe6-8117-a9895e6eb078:
-            uuid: 6a3b9a83-e9ec-4fe6-8117-a9895e6eb078
+          41a5b426-24f8-4876-a561-cba5024258e8:
+            uuid: 41a5b426-24f8-4876-a561-cba5024258e8
             region: content
             configuration:
               id: 'field_block:node:forum:body'
@@ -59,8 +59,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          2179502c-3d99-4d8d-af87-b055952a2420:
-            uuid: 2179502c-3d99-4d8d-af87-b055952a2420
+          8e410fa1-9617-4eff-b9c7-af62379ccaed:
+            uuid: 8e410fa1-9617-4eff-b9c7-af62379ccaed
             region: content
             configuration:
               id: 'field_block:node:forum:comment_forum'
@@ -76,8 +76,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          240e51de-5e5d-4977-a654-2233278aa372:
-            uuid: 240e51de-5e5d-4977-a654-2233278aa372
+          d4e545e6-c4fc-4fca-9746-e8f61a5375d9:
+            uuid: d4e545e6-c4fc-4fca-9746-e8f61a5375d9
             region: content
             configuration:
               id: 'extra_field_block:node:forum:links'

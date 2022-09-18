@@ -1,0 +1,21 @@
+uuid: a2509660-f2e6-4982-b9b7-c61bcca9ca1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tittle
+    - paragraphs.paragraphs_type.code
+  module:
+    - text
+id: paragraph.code.field_tittle
+field_name: field_tittle
+entity_type: paragraph
+bundle: code
+label: 'Tittle '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
