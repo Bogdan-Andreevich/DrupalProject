@@ -15,6 +15,10 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/config_installer.git"
+        },
+        {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
@@ -27,6 +31,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.1",
         "drupal/block_visibility_groups": "^1.4",
+        "drupal/config_installer": "dev-8.x-1.x",
         "drupal/contact_emails": "^1.20",
         "drupal/contact_storage": "^1.2",
         "drupal/contact_tools": "^1.1",
@@ -64,7 +69,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "RC",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "discard-changes": true,
@@ -118,9 +123,7 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/markdown": {
-                "PHP 8.1 — Issue #3265416": "https://www.drupal.org/files/issues/2022-07-02/3265416-7.patch"
-            }
+
         }
     }
 }
