@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.article
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
@@ -24,14 +23,10 @@ permissions:
   - 'access content overview'
   - 'access files overview'
   - 'access toolbar'
-  - 'create article content'
   - 'create page content'
   - 'create terms in tags'
-  - 'delete article revisions'
-  - 'delete own article content'
   - 'delete own page content'
   - 'delete page revisions'
-  - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'

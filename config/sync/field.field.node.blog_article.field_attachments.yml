@@ -1,0 +1,27 @@
+uuid: 27998435-a98e-464d-add5-d1326bd16126
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.blog_article
+  module:
+    - file
+id: node.blog_article.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: blog_article
+label: Attachments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'fields/node.blog_article.field_attachments/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf png jpg jpeg doc docx xls xlsx zip gz tar'
+  max_filesize: ''
+  description_field: true
+field_type: file

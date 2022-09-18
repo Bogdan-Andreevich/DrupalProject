@@ -1,15 +1,13 @@
-uuid: ec7a1bcb-dfde-43c8-976c-9bc08af1963c
+uuid: 4b750f88-c53e-4af2-af28-654b6631e73d
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.book
-_core:
-  default_config_hash: rYbAZX1eKDo7CVRnBnpYgdmk8HQo5IcKhzePCx9LCZY
-id: node.book.promote
+    - node.type.blog_article
+id: node.blog_article.promote
 field_name: promote
 entity_type: node
-bundle: book
+bundle: blog_article
 label: 'Promoted to front page'
 description: ''
 required: false

@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
+    - field.field.node.page.field_paragraphs
     - node.type.page
   module:
+    - entity_reference_revisions
     - field_layout
     - layout_builder
     - layout_discovery
-    - text
     - user
 third_party_settings:
   field_layout:
@@ -24,21 +24,6 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          0f38ef1d-9c81-4f69-9505-4c3019424663:
-            uuid: 0f38ef1d-9c81-4f69-9505-4c3019424663
-            region: content
-            configuration:
-              id: 'field_block:node:page:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           3bd2d24b-3f7a-4d8f-b3b7-9cbf64ded6ad:
             uuid: 3bd2d24b-3f7a-4d8f-b3b7-9cbf64ded6ad
             region: content
@@ -49,6 +34,23 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 1
             additional: {  }
+          a7515c43-adfe-4639-9f89-2917ca961068:
+            uuid: a7515c43-adfe-4639-9f89-2917ca961068
+            region: content
+            configuration:
+              id: 'field_block:node:page:field_paragraphs'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
@@ -57,12 +59,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 100
+    weight: 102
     region: content
   links:
     settings: {  }

@@ -1,29 +1,22 @@
-uuid: 8ec273eb-47c7-440b-923c-2b0e5ee017dc
+uuid: b6139dd9-4b03-4663-b7d7-c5d4fafd3cb7
 langcode: en
 status: true
 dependencies:
   module:
     - file
-    - image
     - node
-id: node.field_image
-field_name: field_image
+id: node.field_attachments
+field_name: field_attachments
 entity_type: node
-type: image
+type: file
 settings:
   target_type: file
-  display_field: false
+  display_field: true
   display_default: false
   uri_scheme: public
-  default_image:
-    uuid: null
-    alt: ''
-    title: ''
-    width: null
-    height: null
-module: image
+module: file
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

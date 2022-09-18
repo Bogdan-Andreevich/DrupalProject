@@ -1,43 +1,50 @@
-uuid: e7973867-aa06-4925-b690-fa36feb276b4
+uuid: d6887d75-6ca9-44d6-8769-78cf8ac4b689
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book.body
-    - node.type.book
+    - field.field.node.page.field_paragraphs
+    - node.type.page
   module:
     - field_layout
     - layout_discovery
+    - paragraphs
     - path
     - scheduler
-    - text
 third_party_settings:
   field_layout:
     id: layout_onecol
     settings:
       label: ''
-_core:
-  default_config_hash: b_hvlXsOoKPjlyIXXp3Msda_pMWTEC4kFo61--akj0Y
-id: node.book.default
+id: node.page.default
 targetEntityType: node
-bundle: book
+bundle: page
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 26
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_paragraphs:
+    type: paragraphs
+    weight: 121
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: text
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   langcode:
     type: language_select
