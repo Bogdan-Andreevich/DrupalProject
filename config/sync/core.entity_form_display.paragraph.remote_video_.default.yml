@@ -1,26 +1,33 @@
-uuid: c21396af-5349-4a57-8788-5a2582e4c6af
+uuid: c8dcb2fe-f6a3-4a67-a187-f900667b0ff2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.youtube_gallary.field_tittle
-    - field.field.paragraph.youtube_gallary.field_youtubes
-    - paragraphs.paragraphs_type.youtube_gallary
+    - field.field.paragraph.remote_video_.field_remote_video_
+    - field.field.paragraph.remote_video_.field_tittle
+    - paragraphs.paragraphs_type.remote_video_
   module:
     - field_layout
     - layout_discovery
+    - media_library
     - text
-    - youtube
 third_party_settings:
   field_layout:
     id: layout_onecol
     settings:
       label: ''
-id: paragraph.youtube_gallary.default
+id: paragraph.remote_video_.default
 targetEntityType: paragraph
-bundle: youtube_gallary
+bundle: remote_video_
 mode: default
 content:
+  field_remote_video_:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_tittle:
     type: text_textfield
     weight: 0
@@ -28,13 +35,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_youtubes:
-    type: youtube
-    weight: 1
-    region: content
-    settings:
-      placeholder_url: ''
     third_party_settings: {  }
 hidden:
   created: true

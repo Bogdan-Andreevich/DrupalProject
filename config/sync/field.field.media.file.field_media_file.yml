@@ -1,0 +1,27 @@
+uuid: 5f64afa8-897c-4a12-bba6-93c975fc1c20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.file
+  module:
+    - file
+id: media.file.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: file
+label: File
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'fields/media.file.field_media_file/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf docx doc jpg png txt rtf jpeg jpe jif jfif gif tif tiff'
+  max_filesize: ''
+  description_field: false
+field_type: file

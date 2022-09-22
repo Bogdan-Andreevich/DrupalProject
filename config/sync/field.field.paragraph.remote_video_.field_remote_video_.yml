@@ -1,26 +1,26 @@
-uuid: a42fef9e-f1ca-42fe-8784-ca571f0ded8f
+uuid: 2b3e9bc6-6b9e-43e7-917f-11034fdc3179
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
-    - media.type.image
-    - paragraphs.paragraphs_type.image_and_text_
-id: paragraph.image_and_text_.field_image
-field_name: field_image
+    - field.storage.paragraph.field_remote_video_
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.remote_video_
+id: paragraph.remote_video_.field_remote_video_
+field_name: field_remote_video_
 entity_type: paragraph
-bundle: image_and_text_
-label: image
+bundle: remote_video_
+label: 'Remote Video '
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      remote_video: remote_video
     sort:
       field: _none
       direction: ASC

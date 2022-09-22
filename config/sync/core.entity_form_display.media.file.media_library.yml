@@ -1,11 +1,11 @@
-uuid: cc4fb966-d8f6-42cb-a1f1-6123ca28dff2
+uuid: 801e20bf-075c-41ed-94a7-6e455c711721
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
-    - field.field.media.document.field_media_document
-    - media.type.document
+    - field.field.media.file.field_media_file
+    - media.type.file
   module:
     - field_layout
     - layout_discovery
@@ -14,24 +14,23 @@ third_party_settings:
     id: layout_onecol
     settings:
       label: ''
-_core:
-  default_config_hash: dcpfpqyLXOSGpulacMAJW3H-G34_LeNsjdfxd1_oCfY
-id: media.document.media_library
+id: media.file.media_library
 targetEntityType: media
-bundle: document
+bundle: file
 mode: media_library
 content:
-  langcode:
-    type: language_select
-    weight: 2
+  name:
+    type: string_textfield
+    weight: 0
     region: content
     settings:
-      include_locked: true
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_document: true
-  name: true
+  field_media_file: true
+  langcode: true
   path: true
   status: true
   uid: true

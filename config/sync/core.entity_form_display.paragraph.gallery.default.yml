@@ -5,12 +5,11 @@ dependencies:
   config:
     - field.field.paragraph.gallery.field_images
     - field.field.paragraph.gallery.field_tittle
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.gallery
   module:
     - field_layout
-    - image
     - layout_discovery
+    - media_library
     - text
 third_party_settings:
   field_layout:
@@ -23,12 +22,11 @@ bundle: gallery
 mode: default
 content:
   field_images:
-    type: image_image
+    type: media_library_widget
     weight: 1
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_tittle:
     type: text_textfield

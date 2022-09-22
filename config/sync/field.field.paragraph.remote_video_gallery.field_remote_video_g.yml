@@ -1,16 +1,16 @@
-uuid: 5be3df2d-2230-4534-8b8c-36a29dde90ef
+uuid: 07bfca7c-5778-4829-8cc3-72559525e69a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_images
-    - media.type.image
-    - paragraphs.paragraphs_type.gallery
-id: paragraph.gallery.field_images
-field_name: field_images
+    - field.storage.paragraph.field_remote_video_g
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.remote_video_gallery
+id: paragraph.remote_video_gallery.field_remote_video_g
+field_name: field_remote_video_g
 entity_type: paragraph
-bundle: gallery
-label: images
+bundle: remote_video_gallery
+label: 'Remote Video Gallery'
 description: ''
 required: true
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      remote_video: remote_video
     sort:
       field: _none
       direction: ASC

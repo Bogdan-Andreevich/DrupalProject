@@ -1,12 +1,11 @@
-uuid: 2224e4c6-5a8a-4036-af4d-0b526926af52
+uuid: 1f023e52-703a-4781-bd98-e407e6872e58
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.image_and_text_.field__body
-    - field.field.paragraph.image_and_text_.field_image
-    - field.field.paragraph.image_and_text_.field_tittle
-    - paragraphs.paragraphs_type.image_and_text_
+    - field.field.paragraph.remote_video_gallery.field_remote_video_g
+    - field.field.paragraph.remote_video_gallery.field_tittle
+    - paragraphs.paragraphs_type.remote_video_gallery
   module:
     - field_layout
     - layout_discovery
@@ -17,22 +16,14 @@ third_party_settings:
     id: layout_onecol
     settings:
       label: ''
-id: paragraph.image_and_text_.default
+id: paragraph.remote_video_gallery.default
 targetEntityType: paragraph
-bundle: image_and_text_
+bundle: remote_video_gallery
 mode: default
 content:
-  field__body:
-    type: text_textarea
-    weight: 2
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_image:
+  field_remote_video_g:
     type: media_library_widget
-    weight: 3
+    weight: 1
     region: content
     settings:
       media_types: {  }

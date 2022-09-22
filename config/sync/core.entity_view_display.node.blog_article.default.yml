@@ -11,8 +11,6 @@ dependencies:
     - node.type.blog_article
   module:
     - entity_reference_revisions
-    - file
-    - image
     - text
     - user
 id: node.blog_article.default
@@ -28,23 +26,22 @@ content:
     weight: 101
     region: content
   field_attachments:
-    type: file_default
+    type: entity_reference_entity_view
     label: above
     settings:
-      use_description_as_link_text: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 104
+    weight: 106
     region: content
   field_image:
-    type: image
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 105
+    weight: 107
     region: content
   field_paragraphs:
     type: entity_reference_revisions_entity_view

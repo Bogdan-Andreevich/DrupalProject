@@ -1,17 +1,12 @@
-uuid: 0ec26dbf-74aa-491d-b113-024a280cd096
+uuid: 15c82797-88e0-4563-b394-1254dc4cd8c5
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - media
-  enforced:
-    module:
-      - media
-_core:
-  default_config_hash: BdkTx7IL59MCw5a_fOZprPTOGM_wcjz-Fm8g7HV3vFk
-id: media.field_media_document
-field_name: field_media_document
+id: media.field_media_file
+field_name: field_media_file
 entity_type: media
 type: file
 settings:

@@ -8,14 +8,12 @@ dependencies:
     - field.field.node.blog_article.field_image
     - field.field.node.blog_article.field_paragraphs
     - field.field.node.blog_article.field_tags
-    - image.style.thumbnail
     - node.type.blog_article
   module:
     - field_group
     - field_layout
-    - file
-    - image
     - layout_discovery
+    - media_library
     - paragraphs
     - path
     - scheduler
@@ -111,19 +109,18 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_attachments:
-    type: file_generic
+    type: media_library_widget
     weight: 126
     region: content
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
   field_image:
-    type: image_image
-    weight: 125
+    type: media_library_widget
+    weight: 127
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_paragraphs:
     type: paragraphs

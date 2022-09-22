@@ -123,7 +123,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
-
+            "drupal/markdown": {
+                "PHP 8.1 — Issue #3265416": "https://git.drupalcode.org/project/markdown/-/merge_requests/17.diff"
+            }
         }
     }
 }

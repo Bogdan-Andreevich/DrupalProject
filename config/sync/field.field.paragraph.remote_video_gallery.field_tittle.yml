@@ -1,16 +1,16 @@
-uuid: abdf7666-8527-4882-9858-853436c4976e
+uuid: 7d30100a-d54b-4f1d-b199-44b816a89c2b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_tittle
-    - paragraphs.paragraphs_type.youtube
+    - paragraphs.paragraphs_type.remote_video_gallery
   module:
     - text
-id: paragraph.youtube.field_tittle
+id: paragraph.remote_video_gallery.field_tittle
 field_name: field_tittle
 entity_type: paragraph
-bundle: youtube
+bundle: remote_video_gallery
 label: 'Tittle '
 description: ''
 required: false

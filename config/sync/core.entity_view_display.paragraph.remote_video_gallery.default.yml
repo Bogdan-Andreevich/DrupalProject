@@ -1,19 +1,19 @@
-uuid: a97cfcbe-2cbd-4346-912f-55fcdc0d5d36
+uuid: 791b898f-5bc4-47ee-b04b-c0e85be021ea
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.gallery.field_images
-    - field.field.paragraph.gallery.field_tittle
-    - paragraphs.paragraphs_type.gallery
+    - field.field.paragraph.remote_video_gallery.field_remote_video_g
+    - field.field.paragraph.remote_video_gallery.field_tittle
+    - paragraphs.paragraphs_type.remote_video_gallery
   module:
     - text
-id: paragraph.gallery.default
+id: paragraph.remote_video_gallery.default
 targetEntityType: paragraph
-bundle: gallery
+bundle: remote_video_gallery
 mode: default
 content:
-  field_images:
+  field_remote_video_g:
     type: entity_reference_entity_view
     label: above
     settings:
