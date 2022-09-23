@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.markdown
     - filter.format.restricted_html
   module:
     - comment
@@ -18,5 +19,6 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'use text format markdown'
   - 'use text format restricted_html'
   - 'view media'

@@ -1,0 +1,34 @@
+uuid: c2cce799-05ca-4c86-bde6-ec9b049e7f3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - markdown
+name: MarkDown
+format: markdown
+weight: -10
+filters:
+  markdown:
+    id: markdown
+    provider: markdown
+    status: true
+    weight: -15
+    settings:
+      id: php-markdown
+      enabled: true
+      render_strategy:
+        type: filter_output
+        custom_allowed_html: ''
+        plugins:
+          commonmark: false
+          commonmark-external-links: false
+          commonmark-footnotes: false
+          commonmark-heading-permalink: false
+          commonmark-strikethrough: false
+          commonmark-table: false
+          commonmark-task-list: false
+          filter_align: false
+          filter_caption: false
+          media_embed: false
+      override: false
+    filterFormat: null
