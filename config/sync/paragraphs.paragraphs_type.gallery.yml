@@ -4,9 +4,13 @@ status: true
 dependencies:
   content:
     - 'file:file:86a2f489-57f3-4719-8329-b40ec8e2382b'
+  module:
+    - drupal_project_paragraphs
 id: gallery
 label: Gallery
 icon_uuid: 86a2f489-57f3-4719-8329-b40ec8e2382b
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABgAAAAYADwa0LPAAAAWUlEQVRo3u3YMQ6AIAAEQfD/f9baxAYtNoaZklDcFjSMAVCaD2dnPWph6zjqVV8JqAmoCagJqAmoCagJqAmoCagJqAmoCWB3b/5GZ3zv5vdvQEBNQE0AwN4ujokFQ8fzLj4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDktMjJUMTc6MjU6NDQrMDA6MDCBLzhJAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA5LTIyVDE3OjI1OjQ0KzAwOjAw8HKA9QAAAABJRU5ErkJggg=='
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  drupal_project_paragraphs_gallery:
+    enabled: true

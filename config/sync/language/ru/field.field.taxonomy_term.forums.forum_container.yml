@@ -1,0 +1,4 @@
+label: Контейнер
+settings:
+  on_label: Да
+  off_label: Нет
