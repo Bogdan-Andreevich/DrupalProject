@@ -11,6 +11,7 @@ use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\paragraphs\Entity\ParagraphsType;
 use Drupal\paragraphs\ParagraphInterface;
 use Drupal\paragraphs\ParagraphsBehaviorBase;
+use Drupal\Component\Utility;
 
 /**
  *  Class GalleryBehavior
@@ -35,17 +36,16 @@ class ImageAndTextBehavior extends ParagraphsBehaviorBase {
   /**
    * Extends the paragraph render array with behavior.
    */
-  public function view(array &$build, Paragraph $paragraph, EntityViewDisplayInterface $display, $view_mode)
-  {
+  public function view(array &$build, Paragraph $paragraph, EntityViewDisplayInterface $display, $view_mode) {
     $bem_block = 'paragraph-' . $paragraph->bundle() . ($view_mode == 'default' ? '' : '-' . $view_mode);
     $image_position = $paragraph->getBehaviorSetting($this->getPluginId(), 'image_position', 'left');
     $image_size = $paragraph->getBehaviorSetting($this->getPluginId(), 'image_size', '4_12');
 
-    $build['#attributes']['class'][] = $bem_block . '--image--position-' . $image_position;
-    $build['#attributes']['class'][] = $bem_block . '--image--size-' . $image_size;
+    $build['#attributes']['class'][] = Html::getClass($bem_block . '--image-position-' . $image_position);
+    $build['#attributes']['class'][] = Html::getClass($bem_block . '--image-size-' . $image_size);
 
-    if(isset($build['field_image']) && $build['field_image']['#formatter'] == 'media_thumbnail'){
-      switch ($image_size){
+    if (isset($build['field_image']) && $build['field_image']['#formatter'] == 'media_thumbnail') {
+      switch ($image_size) {
         case '4_12':
         default:
           $image_style = 'paragraph_image_text_4_of_12';
@@ -58,23 +58,23 @@ class ImageAndTextBehavior extends ParagraphsBehaviorBase {
         case '8_12':
           $image_style = 'paragraph_image_text_8_of_12';
           break;
-
-          $build['field_image']['0']['#image_style'] = $image_style;
       }
+
+      $build['field_image'][0]['#image_style'] = $image_style;
     }
   }
 
   /**
    * {@inheritdoc}
    */
-  public function buildBehaviorForm(ParagraphInterface $paragraph, array &$form, FormStateInterface $form_state)
-  {
+  public function buildBehaviorForm(ParagraphInterface $paragraph, array &$form, FormStateInterface $form_state) {
+
     $form['image_position'] = [
       '#type' => 'select',
       '#title' => $this->t('Image position'),
       '#options' => [
-        'right' => $this->t('Right'),
         'left' => $this->t('Left'),
+        'right' => $this->t('Right'),
       ],
       '#default_value' => $paragraph->getBehaviorSetting($this->getPluginId(), 'image_position', 'left'),
     ];
@@ -84,12 +84,14 @@ class ImageAndTextBehavior extends ParagraphsBehaviorBase {
       '#title' => $this->t('Image size'),
       '#description' => $this->t('Size of the image in grid.'),
       '#options' => [
-        '4_12' => $this->t('4 colums of 12'),
-        '6_12' => $this->t('6 colums of 12'),
-        '8_12' => $this->t('8 colums of 12'),
+        '4_12' => $this->t('4 columns of 12'),
+        '6_12' => $this->t('6 columns of 12'),
+        '8_12' => $this->t('8 columns of 12'),
       ],
       '#default_value' => $paragraph->getBehaviorSetting($this->getPluginId(), 'image_size', '4_12'),
     ];
+
     return $form;
   }
+
 }
