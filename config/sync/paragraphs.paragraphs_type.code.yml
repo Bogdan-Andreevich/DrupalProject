@@ -4,9 +4,13 @@ status: true
 dependencies:
   content:
     - 'file:file:f1f02a6f-b27e-4d91-9fbb-92c2ae8f99cf'
+  module:
+    - drupal_project_paragraphs
 id: code
 label: Code
 icon_uuid: f1f02a6f-b27e-4d91-9fbb-92c2ae8f99cf
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABgAAAAYADwa0LPAAABWElEQVRo3u2YsU7DMBRFTxm6oIIKK537IQysSFX5R1Clzgz8B3NYAZHyAe7gBLWWVdf2sy2kdyQPkZrnexrL8QsoiqL8RxbABtgBxhkh3N/vgC2wrBn+yxMkVWAc30Pt4mxOhMgRMMBLDQHfspES6GPDTBIEjEANsXoXmZM3RwVaowKtUYHWxApcV8g0KynwUEHgvlThW+CD41f/j0Bd92jyDswlg18BT57wBngWqL/11O2A9TB3MiYwPoE7AYEl9igdmk9MoMf+8xLhRxbYo3QfK5CyjU6AKXApKDBmyT3ZHhF6pFIdVKjDS15CIzPgEbs7lOigfB1eB6yIfCeEmA+FszooD+422gE3ksEPWSP4aAfceqtS4cHuy6UFopaN9sStUYHWqEBrVKA1KQK/znXux91Doo8mKQJvCfecy2vB2n+EOqgQpTu8szjVQcUKlOjwFEVRKrEHW3vRlQpOl2cAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDktMjJUMTc6MjU6MTUrMDA6MDBvuD2ZAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA5LTIyVDE3OjI1OjE1KzAwOjAwHuWFJQAAAABJRU5ErkJggg=='
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  drupal_project_paragraphs_paragraph_class:
+    enabled: true

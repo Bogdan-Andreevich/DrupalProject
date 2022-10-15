@@ -126,6 +126,9 @@
         "patches": {
             "drupal/markdown": {
                 "PHP 8.1 — Issue #3265416": "https://git.drupalcode.org/project/markdown/-/merge_requests/17.diff"
+            },
+            "drupal/image": {
+                "Call to a member function transformDimensions() on null in template_preprocess\n": "https://www.drupal.org/files/issues/2020-11-06/2957368-14.patch"
             }
         }
     }

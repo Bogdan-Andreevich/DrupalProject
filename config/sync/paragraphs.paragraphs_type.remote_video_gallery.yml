@@ -4,9 +4,13 @@ status: true
 dependencies:
   content:
     - 'file:file:4975502d-0efe-4a90-b261-824f51772413'
+  module:
+    - drupal_project_paragraphs
 id: remote_video_gallery
 label: 'Remote Video Gallery'
 icon_uuid: 4975502d-0efe-4a90-b261-824f51772413
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABgAAAAYADwa0LPAAAAcklEQVRo3u3ZMQqAMBAF0R/x/leOrUUIEsFxdV4lKJJhSWFMJInUTtedXszK2jd6FXcZQNsn99rltzxjuEfLT8AAmgE0A2gG0AygGUAzgGYAbfZFVuKUovwEDKCtnEr0lzyX5AMTMIBmAM3/AzQDJOnfDiTmCEzytiLQAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA5LTIyVDE3OjI3OjU4KzAwOjAwjtCCngAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOS0yMlQxNzoyNzo1OCswMDowMP+NOiIAAAAASUVORK5CYII='
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  drupal_project_paragraphs_paragraph_class:
+    enabled: true

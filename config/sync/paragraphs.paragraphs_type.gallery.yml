@@ -14,3 +14,5 @@ description: ''
 behavior_plugins:
   drupal_project_paragraphs_gallery:
     enabled: true
+  drupal_project_paragraphs_paragraph_class:
+    enabled: true

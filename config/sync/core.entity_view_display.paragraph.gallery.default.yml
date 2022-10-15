@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.gallery.field_tittle
     - paragraphs.paragraphs_type.gallery
   module:
+    - media
     - text
 id: paragraph.gallery.default
 targetEntityType: paragraph
@@ -14,11 +15,13 @@ bundle: gallery
 mode: default
 content:
   field_images:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content

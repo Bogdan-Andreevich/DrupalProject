@@ -4,9 +4,13 @@ status: true
 dependencies:
   content:
     - 'file:file:ca47e598-a31f-42c5-ac02-d7c66b3d491d'
+  module:
+    - drupal_project_paragraphs
 id: text
 label: Text
 icon_uuid: ca47e598-a31f-42c5-ac02-d7c66b3d491d
 icon_default: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABgAAAAYADwa0LPAAAA1UlEQVRo3u3YwQqCQBSF4b9oG71Arn32QmjdojeywOkBbGEbJ9MZJe8MnQ9mIwrncNHBARERkU8FUAEOaI2XAy5AGRP+nkBwfz3e2SZVCYT9ts5+2M1AAQfsQ8e1Mgccpgq0ASXXNJpnaxxuMRWwpgLWdjOeaWc8EyPqq5f9BFTA2px3wHpn7sl+AipgLYV9YNE7lf0EVMCa9gFrKmBNBawNfYWe9A+2fv0HFqPxLwxN4GadcsQ15KaS7iDV+hzUXzVwDG1a0B2kNgkEb4BTTHgREfkfLx7yxHJbgwRzAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA5LTIyVDE3OjI4OjIyKzAwOjAw0W6PRAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wOS0yMlQxNzoyODoyMiswMDowMKAzN/gAAAAASUVORK5CYII='
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  drupal_project_paragraphs_paragraph_class:
+    enabled: true
