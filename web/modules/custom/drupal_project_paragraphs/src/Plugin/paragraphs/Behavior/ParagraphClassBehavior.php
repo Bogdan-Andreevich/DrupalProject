@@ -11,6 +11,7 @@ use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\paragraphs\Entity\ParagraphsType;
 use Drupal\paragraphs\ParagraphInterface;
 use Drupal\paragraphs\ParagraphsBehaviorBase;
+use Drupal\Component\Utility;
 
 /**
  *  Class ParagraphClassBehavior
@@ -41,7 +42,7 @@ class ParagraphClassBehavior extends ParagraphsBehaviorBase {
     //dump($classes_value);
     $classes = explode(" ", $classes_value);
     foreach ($classes as $class){
-      $build['#attributes']['class'][] = $class;
+      $build['#attributes']['class'][] = Utility\Html::getClass($class);
     }
   }
 

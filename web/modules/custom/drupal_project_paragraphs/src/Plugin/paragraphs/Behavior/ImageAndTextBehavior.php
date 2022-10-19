@@ -41,12 +41,12 @@ class ImageAndTextBehavior extends ParagraphsBehaviorBase {
    */
   public function view(array &$build, Paragraph $paragraph, EntityViewDisplayInterface $display, $view_mode)
   {
-    $bem_block = 'paragraph-' . $paragraph->bundle() . ($view_mode == 'default' ? '' : '-' . $view_mode);
+    $paragraph_view_mode = 'paragraph-' . $paragraph->bundle() . ($view_mode == 'default' ? '' : '-' . $view_mode);
     $image_position = $paragraph->getBehaviorSetting($this->getPluginId(), 'image_position', 'left');
     $image_size = $paragraph->getBehaviorSetting($this->getPluginId(), 'image_size', '4_12');
 
-    $build['#attributes']['class'][] = $bem_block . '--image-position-' . $image_position;
-    $build['#attributes']['class'][] = $bem_block . '--image-size-' . $image_size;
+    $build['#attributes']['class'][] = Utility\Html::getClass($paragraph_view_mode . '--image-position-' . $image_position) ;
+    $build['#attributes']['class'][] = Utility\Html::getClass($paragraph_view_mode . '--image-size-' . $image_size);
 
     if (isset($build['field_image']) && $build['field_image']['#formatter'] == 'media_thumbnail') {
       switch ($image_size) {
