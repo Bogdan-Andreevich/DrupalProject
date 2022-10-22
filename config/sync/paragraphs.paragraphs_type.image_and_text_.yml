@@ -16,3 +16,7 @@ behavior_plugins:
     enabled: true
   drupal_project_paragraphs_paragraph_class:
     enabled: true
+  drupal_project_paragraphs_paragraph_style:
+    enabled: true
+  drupal_project_paragraphs_paragraph_title:
+    enabled: true

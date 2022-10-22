@@ -14,3 +14,9 @@ description: ''
 behavior_plugins:
   drupal_project_paragraphs_paragraph_class:
     enabled: true
+  drupal_project_paragraphs_paragraph_style:
+    enabled: true
+  drupal_project_paragraphs_paragraph_title:
+    enabled: true
+  drupal_project_paragraphs_remote_video_gallery:
+    enabled: true
