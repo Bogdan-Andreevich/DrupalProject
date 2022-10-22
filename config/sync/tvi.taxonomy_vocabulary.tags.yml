@@ -1,0 +1,5 @@
+enable_override: true
+view: blog_articles
+view_display: in_tag
+inherit_settings: true
+pass_arguments: true
