@@ -106,7 +106,7 @@ class ParagraphStyleBehavior extends ParagraphsBehaviorBase {
   {
     $style = [];
 
-    if ($paragraph->hasField('field_title')) {
+    if ($paragraph->hasField('field_tittle')) {
       $style['title'] = [
         'label' => $this->t('Paragraphs title'),
         'options' => [
