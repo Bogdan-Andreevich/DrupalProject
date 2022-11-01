@@ -40,6 +40,7 @@ module:
   dblog: 0
   devel: 0
   devel_generate: 0
+  drupal_project: 0
   drupal_project_paragraphs: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
