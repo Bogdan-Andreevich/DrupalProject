@@ -1,0 +1,30 @@
+<?php
+
+use Drupal\Component\Utility\NestedArray;
+
+/**
+ * @file
+ * Main file for custom hooks and functions
+ */
+
+/**
+ * Implements hook_theme().
+ *
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ * @return array
+ */
+function drupal_project_theme($existing, $type, $theme, $path)
+{
+  return[
+    'drupal_project_previous_next' => [
+      'variable' => [
+        'entity' => NULL,
+      ],
+      'file' => 'drupal_project.theme.inc',
+    ],
+  ];
+}
+

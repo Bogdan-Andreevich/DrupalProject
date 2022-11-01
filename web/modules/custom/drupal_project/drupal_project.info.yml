@@ -1,0 +1,6 @@
+name: drupal project
+type: module
+description: Core module for custom code, hooks and functions.
+package: Custom
+core_version_requirement: ^9 || ^10
+
